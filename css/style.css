@@ -80,3 +80,16 @@ body {
     /* Show '>>' */
     opacity: 1; 
 }
+
+#features img{
+    /* Let elements at the center */
+    display:block;
+    margin:auto;
+
+    width:360px;
+    height:360px;
+}
+
+#features h1,p{
+    text-align: center;
+}
