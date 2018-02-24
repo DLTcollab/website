@@ -1,4 +1,4 @@
-.wrapper {
+.flexbox-container {
     background-color: #ccc;
     min-height: 100vh;
     display: flex;
@@ -7,7 +7,7 @@
     flex-wrap: wrap;
 }
 
-.inner_div {
+.flexbox-item {
     /* Leave spaces among each flexes*/
     margin-top:10vh;
     margin-bottom:10vh;
@@ -16,4 +16,6 @@
     width: 360px;
 
     /* min-height: 30vh; */
+
+    flex-basis :30%;
 }

@@ -81,8 +81,7 @@ body {
     opacity: 1; 
 }
 
-#features img{
-    /* Let elements at the center */
+.flexbox-container img{
     display:block;
     margin:auto;
 
@@ -90,6 +89,27 @@ body {
     height:360px;
 }
 
-#features h1,p{
+.flexbox-container h1 , .flexbox-container p{
     text-align: center;
 }
+
+#team-introduction{
+    flex:100%;
+}
+
+
+#team-introduction h1{
+    font-size: 60px;
+}
+
+#members{
+    background-color: rgb(100, 101, 107);
+}
+
+
+#members h1 , #members p{
+    color: aliceblue;
+}
+
+
+
