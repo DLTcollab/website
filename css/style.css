@@ -3,6 +3,36 @@ body {
     font-family: sans-serif;
 }
 
+.banner {
+    /* Sizing */
+    width: 100vw;
+    height: 70vh;
+}
+
+.progressive-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.progressive-image div {
+    width: 100%;
+    padding-top:70vh;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.progressive-image .loadingImage {
+    filter: blur(5px);
+}
+
+.progressive-image .overlay {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
 .hero {
     /* Sizing */
     width: 100vw;
@@ -20,6 +50,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 }
 
 .hero h1 {
@@ -62,9 +93,9 @@ body {
 
 .herobtn span:after {
     /* '>>' */
-    content: '\00bb'; 
+    content: '\00bb';
     position: absolute;
-     /* Hide '>>' */
+    /* Hide '>>' */
     opacity: 0;
     right: -50px;
     transition: 0.5s;
@@ -78,38 +109,34 @@ body {
 .herobtn:hover span:after {
     right: 0;
     /* Show '>>' */
-    opacity: 1; 
+    opacity: 1;
 }
 
-.flexbox-container img{
-    display:block;
-    margin:auto;
-
-    width:360px;
-    height:360px;
+.flexbox-container img {
+    display: block;
+    margin: auto;
+    width: 360px;
+    height: 360px;
 }
 
-.flexbox-container h1 , .flexbox-container p{
+.flexbox-container h1,
+.flexbox-container p {
     text-align: center;
 }
 
-#team-introduction{
-    flex:100%;
+#team-introduction {
+    flex: 100%;
 }
 
-
-#team-introduction h1{
+#team-introduction h1 {
     font-size: 60px;
 }
 
-#members{
+#members {
     background-color: rgb(100, 101, 107);
 }
 
-
-#members h1 , #members p{
+#members h1,
+#members p {
     color: aliceblue;
 }
-
-
-
