@@ -130,9 +130,6 @@ body {
     text-align: center;
 }
 
-.div-title {
-    flex: 100%;
-}
 
 #team-introduction h1,#call-to-action-introduction h1 {
     font-size: 60px;
