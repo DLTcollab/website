@@ -3,53 +3,9 @@ body {
     font-family: sans-serif;
 }
 
-/* .banner {
-    width: 100vw;
-    height: 70vh;
-}
-
-.progressive-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.progressive-image div {
-    width: 100%;
-    padding-top:70vh;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-}
-
-.progressive-image .loadingImage {
-    filter: blur(5px);
-}
-
-.progressive-image .overlay {
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in;
-} */
-
-.hero-container {
-    /* Sizing */
-    width: 100vw;
-    height: 70vh;
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Text styles */
+h1,
+p {
     text-align: center;
-    color: white;
-    /* Background styles */
-    background-image: url('https://static1.squarespace.com/static/5873c778e6f2e14a3529e892/t/58d28fb817bffc2216062cb1/1490194393248/shutterstock_349563746.jpg?format=1500w');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
 }
 
 .hero-container h1 {
@@ -82,7 +38,6 @@ body {
     transition: all 0.5s;
     cursor: pointer;
     text-align: center;
-    
 }
 
 .herobtn span {
@@ -113,24 +68,7 @@ body {
     opacity: 1;
 }
 
-.flexbox-container img {
-    display: block;
-    margin: auto;
-    width: 360px;
-    height: 360px;
-}
-
-.flexbox-container h1,
-.flexbox-container p,
-.flexbox-item h1,
-.flexbox-item p,
-#c2a-introduction h1,
-#c2a-introduction p {
-    text-align: center;
-}
-
-
-#team-introduction h1, #feature-introduction h1, #c2a-introduction h1 {
+.introduction h1 {
     font-size: 60px;
 }
 
@@ -143,13 +81,31 @@ body {
     color: aliceblue;
 }
 
-
-
-#c2a-introduction {
-    flex: 100%;
+/* .banner {
+    width: 100vw;
+    height: 70vh;
 }
 
-#action-logo{
-    width:100%;
-    height:100%;
+.progressive-image {
+    position: relative;
+    overflow: hidden;
 }
+
+.progressive-image div {
+    width: 100%;
+    padding-top:70vh;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.progressive-image .loadingImage {
+    filter: blur(5px);
+}
+
+.progressive-image .overlay {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+} */
