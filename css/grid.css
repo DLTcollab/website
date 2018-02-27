@@ -44,6 +44,7 @@
     margin: auto;
     width: 360px;
     height: 360px;
+    border-radius: 50%;
 }
 
 .c2a-container {
