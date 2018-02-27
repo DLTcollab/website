@@ -82,6 +82,8 @@ body {
     /* Animation */
     transition: all 0.5s;
     cursor: pointer;
+    text-align: center;
+    
 }
 
 .herobtn span {
@@ -120,15 +122,19 @@ body {
 }
 
 .flexbox-container h1,
-.flexbox-container p {
+.flexbox-container p,
+.flexbox-item h1,
+.flexbox-item p,
+#call-to-action-introduction h1,
+#call-to-action-introduction p {
     text-align: center;
 }
 
-#team-introduction {
+.div-title {
     flex: 100%;
 }
 
-#team-introduction h1 {
+#team-introduction h1,#call-to-action-introduction h1 {
     font-size: 60px;
 }
 
@@ -139,4 +145,22 @@ body {
 #members h1,
 #members p {
     color: aliceblue;
+}
+
+#call-to-action {
+    background-color: #ccc;
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+#call-to-action-introduction {
+    flex: 100%;
+}
+
+#action-logo{
+    width:100%;
+    height:100%;
 }

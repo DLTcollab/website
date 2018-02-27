@@ -9,13 +9,35 @@
 
 .flexbox-item {
     /* Leave spaces among each flexes*/
-    margin-top:10vh;
+    /* margin-top:10vh; */
     margin-bottom:10vh;
-
     border: 2px solid black;
     width: 360px;
-
     /* min-height: 30vh; */
-
     flex-basis :30%;
+    text-align: center;
+}
+
+.flexbox-item-2 {
+    /* Leave spaces among each flexes*/
+    /* margin-top:10vh; */
+    margin-bottom:10vh;
+    border: 2px solid black;
+    width: 360px;
+    text-align: center;
+    /* min-height: 30vh; */
+}
+
+.flexbox-item-3 {
+    /* Leave spaces among each flexes*/
+    /* margin-top:10vh; */
+    margin-bottom:10vh;
+    border: 2px solid black;
+    width: 640px;
+    text-align: center;
+    /* min-height: 30vh; */
+}
+
+.div-title {
+    flex: 100%;
 }
