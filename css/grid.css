@@ -13,12 +13,12 @@
 .hero-container {
     /* Sizing */
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     /* Text styles */
     text-align: center;
     color: white;
     /* Background styles */
-    background-image: url('https://static1.squarespace.com/static/5873c778e6f2e14a3529e892/t/58d28fb817bffc2216062cb1/1490194393248/shutterstock_349563746.jpg?format=1500w');
+    background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
