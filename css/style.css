@@ -7,10 +7,10 @@ body {
     font-family: sans-serif;
 }
 
-h1,
-p {
+h1,p {
     text-align: center;
 }
+
 
 .lab-logo {
     border-radius: 50%;
