@@ -7,10 +7,10 @@ body {
     font-family: sans-serif;
 }
 
-h1,p {
+h1,
+p {
     text-align: center;
 }
-
 
 .lab-logo {
     border-radius: 50%;
@@ -36,15 +36,23 @@ h1,p {
 }
 
 .bg-mask {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%);
     position: absolute;
     height: 100vh;
     width: 100vw;
     left: 0;
     right: 0;
-    top: 0;
+    /* top: 0; */
     z-index: 0;
 }
+
+.hero-mask {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%);
+    top: 0;
+}
+/* 
+.feature-mask {
+    background: linear-gradient(to bottom, rgba(1, 18, 248, 0.9) 50%, rgba(133, 148, 230, 0.6) 100%);    
+} */
 
 .bg-mask span {
     position: absolute;
@@ -149,6 +157,22 @@ h1,p {
 #members p {
     color: aliceblue;
 }
+
+#action-logo {
+    transform: rotate(0deg);
+    transition: 1s ease-in-out;
+}
+
+/* .member :hover{
+    box-shadow: inset 0 0 0 5px #f5dd59;
+} */
+
+/* .member-container img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s
+} */
 
 /* .banner {
     width: 100vw;

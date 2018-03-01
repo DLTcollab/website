@@ -30,12 +30,21 @@
     background-color: #ccc;
     min-height: 100vh;
     align-items: center;
+
+    /* Background styles */
+    /* Photo by Jesus Kiteque on Unsplash */
+    /* background-image: url('../images/hero.jpg'); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .feature-item,
 .member-item {
+    z-index: 1;
     width: 360px;
-    flex-basis: 30%;
+    flex-basis: 23%;
     opacity: 0;
     transition: opacity 0.5s ease-in;
 }
@@ -44,22 +53,34 @@
 .member-container img {
     display: block;
     margin: auto;
-    width: 360px;
-    height: 360px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 
-.c2a-container {
-    background-color: #ccc;
+
+.c2a-container {    
+    /* Background styles */
+    /* background-image: url('../images/c2a.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+    background-color: #ccc;    
     min-height: 75vh;
 }
 
 .c2a-item {
     width: 360px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 }
 
 .c2a-item-right {
     width: 640px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 }
 
 .introduction {
