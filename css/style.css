@@ -149,14 +149,27 @@ p {
     font-size: 60px;
 }
 
+/* .feature-texts{
+    background-color: #fff;
+} */
+
 #members {
-    background-color: rgb(100, 101, 107);
+    background-color: #fff;
+}
+
+.member{
+    background:linear-gradient(to bottom, rgba(221, 215, 215, 0.9) 25%, rgba(255, 255, 255, 0.6) 100%);;
 }
 
 #members h1,
 #members p {
-    color: aliceblue;
+    color: rgba(32, 32, 32, 0.883);
 }
+
+.member p {
+    text-align: left;
+}
+
 
 #action-logo {
     transform: rotate(0deg);
