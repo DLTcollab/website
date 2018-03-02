@@ -25,18 +25,16 @@
     background-attachment: fixed;
 }
 
-.feature-container,
-.member-container {
-    background-color: #ccc;
+.feature-container{
+    background-color: #fff;
     min-height: 100vh;
     align-items: center;
-    /* Background styles */
-    /* Photo by Jesus Kiteque on Unsplash */
-    /* background-image: url('../images/hero.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
+}
+
+.member-container {
+    background-color: #fff;
+    min-height: 100vh;
+    align-items: center;
 }
 
 /* .member-container{
@@ -46,7 +44,7 @@
 .feature-item,
 .member-item {
     z-index: 1;
-    width: 250px;
+    /* width: 250px; */
     flex-basis: 23%;
     opacity: 0;
     transition: opacity 0.5s ease-in;
@@ -80,13 +78,7 @@
 }
 
 .c2a-container {
-    /* Background styles */
-    /* background-image: url('../images/c2a.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    background-color: #ccc;
+    background-color: rgb(255, 255, 255);
     min-height: 75vh;
 }
 
@@ -112,11 +104,11 @@
 }
 
 .footer-container {
-    background-color: rgb(51, 51, 51);
+    background-color: #1D0062;
     min-height: 25vh;
 }
 
-.footer-item {
+.footer-item {  
     width: 360px;
 }
 

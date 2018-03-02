@@ -56,12 +56,13 @@ window.onscroll = function () {
             c2a_item[i].style.transitionDelay = c2a_delay + "s";
             c2a_item[i].style.opacity = 1;
         }
-        c2a_logo.style.transform = "rotate(360deg)";
         c2a_count++;
         c2a_item_right.style.transitionDelay = c2a_delay + "s";
         c2a_item_right.style.opacity = 1;
-
+        c2a_btn.style.transform = "scale(1.1)";
+        var myVar = setTimeout(shrink, 800);
+        function shrink() {
+            c2a_btn.style.transform = "scale(1)";
+        }
     }
-
-
 }
