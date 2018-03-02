@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item {
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+.hero-container {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    /* Text styles */
+    text-align: center;
+    color: white;
+    /* Background styles */
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.feature-container{
+    background-color: #fff;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.member-container {
+    background-color: #fff;
+    min-height: 100vh;
+    align-items: center;
+}
+
+/* .member-container{
+    justify-content: center;
+} */
+
+.feature-item,
+.member-item {
+    z-index: 1;
+    /* width: 250px; */
+    flex-basis: 23%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.feature-item{
+    /* 到時候資料來的時候要重新設定 min-height, min-width*/
+    min-width: 300px;
+}
+
+.member-item {
+    margin-bottom: 3vh;
+}
+
+.member {
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+
+    /* 到時候資料來的時候要重新設定 min-height, min-width*/
+    min-width: 300px;
+    min-height: 540px;
+}
+
+.feature-container img,
+.member-container img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.c2a-container {
+    background-color: rgb(255, 255, 255);
+    min-height: 75vh;
+}
+
+.c2a-item {
+    width: 360px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.c2a-item-right {
+    width: 640px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.introduction {
+    flex: 100%;
+}
+
+#action-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-container {
+    background-color: #1D0062;
+    min-height: 25vh;
+}
+
+.footer-item {  
+    width: 360px;
+}
+
+#copyright {
+    flex-basis: 100%;
+}
