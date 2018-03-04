@@ -53,6 +53,8 @@ p {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%);
     top: 0;
 }
+
+
 /* 
 .feature-mask {
     background: linear-gradient(to bottom, rgba(1, 18, 248, 0.9) 50%, rgba(133, 148, 230, 0.6) 100%);    
@@ -121,6 +123,7 @@ p {
     cursor: pointer;
     font-size: 20px;
     font-weight: 300;
+    line-height: 32px;
     letter-spacing: 1px;
     display: inline-block;
     position: relative;
@@ -129,13 +132,19 @@ p {
 }
 
 .herobtn span:after {
-    /* '>>' */
-    content: '\00bb';
     position: absolute;
     /* Hide '>>' */
     opacity: 0;
     right: -50px;
     transition: 0.5s;
+}
+
+.herobtn span.btn--mail:after {
+    content: url('../images/mail-icon.svg');
+}
+
+.herobtn span.btn--twitter:after {
+    content: url('../images/twitter-logo.svg');
 }
 
 .herobtn:hover span {
@@ -144,7 +153,7 @@ p {
 }
 
 .herobtn:hover span:after {
-    right: 0;
+    right: -20px;
     /* Show '>>' */
     opacity: 1;
 }
@@ -152,6 +161,7 @@ p {
 .introduction h1 {
     font-size: 60px;
 }
+
 
 /* .feature-texts{
     background-color: #fff;
@@ -174,7 +184,6 @@ p {
     text-align: left;
 }
 
-
 #action-logo {
     transform: rotate(0deg);
     border-radius: 50%;
@@ -189,9 +198,12 @@ p {
     transform: scale(1);
     transition: 1s;
 }
+
+
 /* .member :hover{
     box-shadow: inset 0 0 0 5px #f5dd59;
 } */
+
 
 /* .member-container img:hover {
     -webkit-transform: scale(1.1);
@@ -199,6 +211,7 @@ p {
     transform: scale(1.1);
     transition: 0.5s
 } */
+
 
 /* .banner {
     width: 100vw;
