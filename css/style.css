@@ -1,0 +1,233 @@
+* {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+h1~p,
+#copyright>p {
+    text-align: center;
+}
+
+.lab-logo {
+    border-radius: 50%;
+    padding: 6px;
+    width: 60px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.ncku-logo {
+    width: 80px;
+    display: inline-block;
+    margin: 12px 0;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.logo-title--container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.bg-mask {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    /* top: 0; */
+    z-index: 0;
+}
+
+.hero-mask {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%);
+    top: 0;
+}
+
+
+/* 
+.feature-mask {
+    background: linear-gradient(to bottom, rgba(1, 18, 248, 0.9) 50%, rgba(133, 148, 230, 0.6) 100%);    
+} */
+
+.bg-mask span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 12px;
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: lighter;
+}
+
+.hero-container h1 {
+    /* Text styles */
+    font-size: 4em;
+    font-weight: normal;
+    font-family: futura, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    /* Margins */
+    display: inline-block;
+    margin: 0px;
+}
+
+.hero-item {
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 12%;
+}
+
+.hero-item h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    width: 50%;
+    min-width: 320px;
+    margin-bottom: 32px;
+}
+
+.herobtn {
+    /* Positioning and sizing */
+    display: inline-block;
+    /* Padding and margins */
+    padding: 0.8rem 2rem;
+    /* Text styles */
+    text-decoration: none;
+    font-size: 1.5em;
+    /* Border styles */
+    margin: 16px;
+    border-radius: 40px;
+    /* Background styles */
+    background-color: #002A5F;
+    /* Animation */
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.3);
+}
+
+.herobtn span {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 1px;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.herobtn span:after {
+    position: absolute;
+    /* Hide '>>' */
+    opacity: 0;
+    right: -50px;
+    transition: 0.5s;
+}
+
+.herobtn span.btn--mail:after {
+    content: url('../images/mail-icon.svg');
+}
+
+.herobtn span.btn--twitter:after {
+    content: url('../images/twitter-logo.svg');
+}
+
+.herobtn:hover span {
+    /* Let the text move to left*/
+    padding-right: 25px;
+}
+
+.herobtn:hover span:after {
+    right: -20px;
+    /* Show '>>' */
+    opacity: 1;
+}
+
+.introduction h1 {
+    font-size: 60px;
+}
+
+
+/* .feature-texts{
+    background-color: #fff;
+} */
+
+#members {
+    background-color: #f7f7f7;
+}
+
+#action-logo {
+    transform: rotate(0deg);
+    border-radius: 50%;
+    transition: 1s ease-in-out;
+}
+
+.footer-item h2,
+.footer-item p {
+    color: antiquewhite;
+}
+
+#herobtn2 {
+    transform: scale(1);
+    transition: 1s;
+}
+
+
+/* .member :hover{
+    box-shadow: inset 0 0 0 5px #f5dd59;
+} */
+
+
+/* .member-container img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s
+} */
+
+
+/* .banner {
+    width: 100vw;
+    height: 70vh;
+}
+
+.progressive-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.progressive-image div {
+    width: 100%;
+    padding-top:70vh;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.progressive-image .loadingImage {
+    filter: blur(5px);
+}
+
+.progressive-image .overlay {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+} */
