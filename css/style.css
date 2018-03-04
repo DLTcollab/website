@@ -13,6 +13,11 @@ p {
     text-align: left;
 }
 
+h1~p,
+#copyright>p {
+    text-align: center;
+}
+
 .lab-logo {
     border-radius: 50%;
     padding: 6px;
