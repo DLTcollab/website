@@ -171,8 +171,8 @@ p {
     background-color: #f7f7f7;
 }
 
-.member{
-    background:linear-gradient(to bottom, rgba(221, 215, 215, 0.6) 25%, rgba(255, 255, 255, 0.3) 100%);;
+.member {
+    background: linear-gradient(to bottom, rgba(221, 215, 215, 0.6) 25%, rgba(255, 255, 255, 0.3) 100%);
 }
 
 #members h1,
@@ -190,11 +190,12 @@ p {
     transition: 1s ease-in-out;
 }
 
-.footer-item h2,.footer-item p{
-    color:antiquewhite;
+.footer-item h2,
+.footer-item p {
+    color: antiquewhite;
 }
 
-#herobtn2{
+#herobtn2 {
     transform: scale(1);
     transition: 1s;
 }
