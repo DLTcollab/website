@@ -59,7 +59,7 @@ window.onscroll = function () {
         c2a_count++;
         c2a_item_right.style.transitionDelay = c2a_delay + "s";
         c2a_item_right.style.opacity = 1;
-        c2a_btn.style.transform = "scale(1.1)";
+        c2a_btn.style.transform = "scale(1.2)";
         var myVar = setTimeout(shrink, 800);
         function shrink() {
             c2a_btn.style.transform = "scale(1)";

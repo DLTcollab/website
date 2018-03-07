@@ -181,12 +181,12 @@ h1~p,
 
 .footer-item h2,
 .footer-item p {
-    color: antiquewhite;
+    color: #fff;
 }
 
 #herobtn2 {
     transform: scale(1);
-    transition: 1s;
+    transition: 1s ease-in-out;
 }
 
 
