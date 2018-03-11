@@ -18,6 +18,10 @@ h1~p,
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .lab-logo {
     border-radius: 50%;
     padding: 6px;
@@ -55,7 +59,6 @@ h1~p,
     background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.6) 100%);
     top: 0;
 }
-
 
 /* 
 .feature-mask {
@@ -164,7 +167,6 @@ h1~p,
     font-size: 60px;
 }
 
-
 /* .feature-texts{
     background-color: #fff;
 } */
@@ -189,11 +191,9 @@ h1~p,
     transition: 1s ease-in-out;
 }
 
-
 /* .member :hover{
     box-shadow: inset 0 0 0 5px #f5dd59;
 } */
-
 
 /* .member-container img:hover {
     -webkit-transform: scale(1.1);
@@ -201,7 +201,6 @@ h1~p,
     transform: scale(1.1);
     transition: 0.5s
 } */
-
 
 /* .banner {
     width: 100vw;
