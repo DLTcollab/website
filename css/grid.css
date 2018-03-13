@@ -121,6 +121,10 @@
     transition: opacity 0.5s ease-in;
 }
 
+#c2a p {
+    padding-bottom: 12px;
+}
+
 .introduction {
     z-index: 1;
     flex-basis: 100%;

@@ -1,20 +1,31 @@
 * {
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.65);
 }
 
 body {
     margin: 0;
-    font-family: sans-serif;
 }
 
 p {
     font-size: 16px;
     letter-spacing: 0.5px;
     text-align: left;
+    font-family: "Open Sans", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 }
 
 h1 {
     margin: 24px;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+h4 {
+    font-weight: 400;
 }
 
 h1~p {
@@ -105,7 +116,7 @@ h1~p,
 
 .hero-container h1 {
     /* Text styles */
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: normal;
     font-family: futura, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: left;
@@ -190,10 +201,6 @@ h1~p,
     right: -20px;
     /* Show '>>' */
     opacity: 1;
-}
-
-.introduction h1 {
-    font-size: 60px;
 }
 
 .introduction p {
