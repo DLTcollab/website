@@ -1,6 +1,6 @@
 * {
     color: rgba(0, 0, 0, 0.65);
-    font-family: "Open Sans", -apple-system, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif letter-spacing: 0.5px;
 }
 
 body {
@@ -230,7 +230,16 @@ h1~p,
 .footer-item h2,
 .footer-item p,
 #copyright p {
-    color: #fff;
+    font-weight: lighter;
+    color: rgb(230, 230, 230);
+}
+
+.footer-item h2 {
+    font-size: 20px;
+}
+#copyright p {
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 #herobtn2 {
