@@ -204,6 +204,11 @@ h1~p,
     opacity: 1;
 }
 
+
+.introduction {
+    opacity: 0;
+}
+
 .introduction p {
     max-width: 800px;
     margin: 0 auto;

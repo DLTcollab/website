@@ -11,8 +11,8 @@
     text-align: center;
 }
 
-
-/* * {
+/* 
+* {
     border: #002A5F solid 2px;
 } */
 
@@ -58,6 +58,10 @@
     /* 到時候資料來的時候要重新設定 min-height, min-width*/
     min-width: 300px;
     min-height: 200px;
+}
+
+h4~p{
+    padding-bottom: 5%;
 }
 
 .member-item {
@@ -153,6 +157,7 @@
 
 .footer-item {
     width: 360px;
+    /* padding:0 20%; */
 }
 
 #copyright {
