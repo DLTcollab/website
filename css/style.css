@@ -13,13 +13,30 @@ p {
     text-align: left;
 }
 
-h1~p,
-#copyright>p {
-    text-align: center;
+h1 {
+    margin: 24px;
+}
+
+h1~p {
+    padding-bottom: 64px
 }
 
 a {
     text-decoration: none;
+}
+
+section:not(.hero-container) {
+    padding: 48px 0;
+}
+
+footer {
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+
+h1~p,
+#copyright>p {
+    text-align: center;
 }
 
 .fa-contact-info {
@@ -189,7 +206,7 @@ a {
     background-color: #fff;
 } */
 
-#members {
+.team {
     background-color: #f7f7f7;
 }
 
