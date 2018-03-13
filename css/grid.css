@@ -98,7 +98,7 @@
     flex-direction: row;
     max-width: 1200px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
 }
 
