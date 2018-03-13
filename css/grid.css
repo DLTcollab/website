@@ -1,14 +1,16 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .item {
     /* border: 2px solid black; */
     text-align: center;
 }
+
 
 /* * {
     border: #002A5F solid 2px;
@@ -32,15 +34,15 @@
 .feature-container {
     background-color: #fff;
     min-height: 50vh;
-    align-content: flex-start;
+    flex-direction: row;
 }
 
 .member-container {
-    background-color: #fff;
-    min-height: 100vh;
-    /* flex-basis: 30%; */
-    align-content: flex-start;
-    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+    justify-content: space-around;
 }
 
 .feature-item,
@@ -76,9 +78,10 @@
     padding: 24px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.5);
-    margin: 0% 15%;
     /* 到時候資料來的時候要重新設定 min-height, min-width*/
     min-height: 600px;
+    min-width: 300px;
+    max-width: 400px;
 }
 
 .contact-icon {
@@ -89,6 +92,14 @@
     margin: auto;
     width: 200px;
     /* padding: 0; */
+}
+
+.feature-item-conatiner {
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .feature-container img,
@@ -102,7 +113,6 @@
 
 .c2a-container {
     background-color: rgb(255, 255, 255);
-    min-height: 75vh;
 }
 
 .c2a-item {
@@ -112,7 +122,10 @@
 }
 
 .introduction {
-    flex: 100%;
+    z-index: 1;
+    flex-basis: 100%;
+    display: block;
+    transition: opacity 0.5s ease-in;
 }
 
 #action-logo {
@@ -120,9 +133,18 @@
     height: 100%;
 }
 
-.footer-container {
+.footer {
     background-color: #002A5F;
     min-height: 25vh;
+    flex-direction: row;
+}
+
+.footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    align-items: flex-start;
 }
 
 .footer-item {

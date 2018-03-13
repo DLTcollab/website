@@ -179,6 +179,11 @@ a {
     font-size: 60px;
 }
 
+.introduction p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 
 /* .feature-texts{
     background-color: #fff;
@@ -195,7 +200,8 @@ a {
 }
 
 .footer-item h2,
-.footer-item p {
+.footer-item p,
+#copyright p {
     color: #fff;
 }
 
