@@ -103,8 +103,9 @@ h4~p {
     background-color: rgba(255, 255, 255, 0.5);
     /* 到時候資料來的時候要重新設定 min-height, min-width*/
     min-height: 600px;
-    min-width: 300px;
-    max-width: 400px;
+    /* min-width: 300px;
+    max-width: 400px; */
+    flex-basis: auto;
 }
 
 .contact-icon {
@@ -122,15 +123,15 @@ h4~p {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    /* max-width: 1200px; */
-    /* width: 100%; */
+    max-width: 1200px;
+    width: 100%;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
 
-    flex-basis: auto;
+    /* flex-basis: auto; */
 }
 
 .feature-container img,
