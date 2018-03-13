@@ -53,10 +53,10 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
-    /* max-width: 1400px; */
+    max-width: 1400px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    flex-basis: auto;
+    /* flex-basis: auto; */
 }
 
 .feature-item,
@@ -129,8 +129,6 @@ h4~p {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-
-    /* flex-basis: auto; */
 }
 
 .feature-container img,
@@ -147,6 +145,8 @@ h4~p {
 }
 
 .c2a-item {
+    flex-basis: auto;
+    /* width:640px; */
     opacity: 0;
     -webkit-transition: opacity 0.5s ease-in;
     -o-transition: opacity 0.5s ease-in;
