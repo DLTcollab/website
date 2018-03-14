@@ -87,8 +87,8 @@ h4~p {
 
 .member {
     /* 到時候資料來的時候要重新設定 min-height, min-width*/
-    /* max-width: 350px;
-    min-width: 280px; */
+    max-width: 350px;
+    min-width: 280px;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
     min-height: 600px;
