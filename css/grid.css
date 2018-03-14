@@ -211,3 +211,12 @@ h4~p {
         background-attachment: scroll;
     }
 }
+
+@media only screen and (orientation:landscape) {
+    .hero-container {
+        height: 512px;
+    }
+    .hero-mask.bg-mask {
+        height: 512px;
+    }
+}
