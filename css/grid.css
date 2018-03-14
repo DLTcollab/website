@@ -212,7 +212,7 @@ h4~p {
     }
 }
 
-@media only screen and (orientation:landscape) {
+@media only screen and (max-height: 600px) and (orientation:landscape) {
     .hero-container {
         height: 512px;
     }

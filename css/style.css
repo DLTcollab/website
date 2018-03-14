@@ -327,3 +327,28 @@ h1~p,
     opacity: 0;
     transition: opacity 1s ease-in;
 } */
+
+@media only screen and (max-width: 600px) {
+    .hero-item {
+        padding-left: 0;
+    }
+    .hero-container h1 {
+        font-size: 2rem;
+    }
+    .lab-logo {
+        width: 120px;
+        height: 120px;
+        margin: 12px;
+        padding: 0;
+        display: block;
+    }
+    .logo-title--container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .hero-item {
+        align-items: center;
+    }
+}
