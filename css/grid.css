@@ -92,6 +92,11 @@ h4~p {
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
     min-height: 600px;
+
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom:30px;
+    
 }
 
 .member-inner {
