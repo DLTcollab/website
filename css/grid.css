@@ -19,6 +19,10 @@
 .item {
     /* border: 2px solid black; */
     text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
 }
 
 .hero-container {
@@ -101,10 +105,6 @@
     /* width: 250px; */
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
-    opacity: 0;
-    -webkit-transition: opacity 0.5s ease-in;
-    -o-transition: opacity 0.5s ease-in;
-    transition: opacity 0.5s ease-in;
 }
 
 .works-item {
@@ -113,6 +113,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    
 }
 
 .works-item img {
@@ -218,10 +219,6 @@ h4~p {
     flex-basis: auto;
     -ms-flex-preferred-size: auto;
     /* width:640px; */
-    opacity: 0;
-    -webkit-transition: opacity 0.5s ease-in;
-    -o-transition: opacity 0.5s ease-in;
-    transition: opacity 0.5s ease-in;
 }
 
 #c2a p {
@@ -234,9 +231,6 @@ h4~p {
     flex-basis: 100%;
     /* flex-basis: auto; */
     display: block;
-    -webkit-transition: opacity 0.5s ease-in;
-    -o-transition: opacity 0.5s ease-in;
-    transition: opacity 0.5s ease-in;
 }
 
 #action-logo {
