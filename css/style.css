@@ -120,7 +120,6 @@ h1~p,
     top: 0;
 }
 
-
 /* 
 .feature-mask {
     background: linear-gradient(to bottom, rgba(1, 18, 248, 0.9) 50%, rgba(133, 148, 230, 0.6) 100%);    
@@ -246,7 +245,6 @@ h1~p,
     margin: 0 auto;
 }
 
-
 /* .feature-texts{
     background-color: #fff;
 } */
@@ -331,11 +329,9 @@ textarea {
     /*makes the field not visible to humans*/
 }
 
-
 /* .member :hover{
     box-shadow: inset 0 0 0 5px #f5dd59;
 } */
-
 
 /* .member-container img:hover {
     -webkit-transform: scale(1.1);
@@ -343,7 +339,6 @@ textarea {
     transform: scale(1.1);
     transition: 0.5s
 } */
-
 
 /* .banner {
     width: 100vw;
