@@ -32,18 +32,22 @@
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115882674-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115882674-1');
+    </script>
     <title>NCKU DLT Lab</title>
 </head>
 
 <body>
-    <!-- <div class="banner">
-        <div class="progressive-image">
-            <div class="loadingImage" style="background: url('images/compressed-hero.jpeg')" data-image="images/hero.jpg">
-            </div>
-            <div class="overlay">
-            </div>
-        </div>
-    </div> -->
     <section class="container hero-container" id="hero">
         <div class="bg-mask hero-mask">
 
@@ -57,7 +61,7 @@
                 We are on a mission to build a more open, accessible and fair future with blockchain and distributed ledger technology
             </h2>
             <!-- TODO: fill in the lab mail -->
-            <a href="mailto:" class="herobtn">
+            <a href="#gform" class="herobtn">
                 <span class="btn--mail">contact us</span>
             </a>
         </div>
@@ -67,7 +71,7 @@
         <div class="item introduction">
             <h1>What do we do?</h1>
             <!-- <hr>                 -->
-            <p>We host a range of events and programs to promote blockchain in the East Bay communities and beyond, largely
+            <p>We host a range of events and research to promote blockchain in the NCKU and Taiwan communities and beyond, largely
                 centered around education, consulting, and innovation.
             </p>
         </div>
@@ -77,8 +81,7 @@
                 <i class="fas fa-book fa-2x" style="color: #002A5F;"></i>
                 <h2>education</h2>
                 <p>
-                    We teach an open-source undergraduate cyptocurrency course, organize the largest crypto meetup in the East Bay and host tech
-                    talks, developer tutorials, workshops and more.
+                    Organize the research and engineering meetup in the NCKU and host tech talks, developer tutorials, workshops and more.
                 </p>
             </div>
             <div class="item feature-item">
@@ -95,18 +98,42 @@
                 <i class="fas fa-search fa-2x" style="color: #002A5F;"></i>
                 <h2>research and development</h2>
                 <p>
-                    We build side projects and do research with cutting-edge blockchain and crypto technologies. Our projects have won first
-                    prizes at collegeiate hackathons like TreeHacks and CalHacks. All of our work is open-source.
+                    We build side projects and do research with cutting-edge blockchain and crypto technologies. All of our work is open-source.
                 </p>
             </div>
         </div>
 
     </section>
+
+    <section class="container works-container" id="works">
+        <div class="item introduction">
+            <h1>Our works</h1>
+        </div>
+        <!-- <div class="container works-item-conatiner">
+            <div class="item works-item">
+                <img src="./images/mosquito.png" alt="mosquito">
+            </div>
+            <div class="item works-item desciption">
+                <h2>Technology Epidemic Prevention - GIS Cloud Internet of Things Anti-mosquito Strategy</h2>
+                <p>
+                    We apply small-scale IoT hardware devices to monitor vector mosquitoes. Since uploading data instantly to the cloud and analysis,
+                    it greatly improves the efficiency of prevention. At the same time, we integrate the epidemic information
+                    held by public sector and visualize the distribution of vector mosquitoes superimposed on the geographical
+                    information, and implement a real time "Dengue fever case evolution heat map" to assist the Tainan Municipal
+                    Government to quickly and clearly identify the epidemic and control the epidemic.
+                </p>
+            </div>
+        </div> -->
+
+    </section>
+
+
+
     <section class="team">
         <div class="container " id="members">
             <div class="item introduction">
                 <h1>Team members</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Entrepreneurs, researchers, talent students and engineers as our task force.</p>
             </div>
             <div class="member-container">
                 <div class="item member-item member" id="man1">
@@ -168,15 +195,15 @@
 
                 <div class="item member-item member" id="man3">
                     <div class="member-inner">
-                        <img src="https://www.buira.org/assets/images/shared/default-profile.png" alt="man3">
+                        <img src="../images/jserv.jpg" alt="man3">
                         <h2>Prof. Jim Huang</h2>
                         <h4>co-PI</h4>
                         <p>
-                            Jim (Jserv) Huang leads the engineering team of BiiLabs, building open source based commercial solutions for information infrastructure
-                            and robotics. After involved in Android Open Source Project, Jim specializes in real-time and
-                            virtualization to bring Linux based robots to fit for the industrial requirements. He is the
-                            co-founder of LXDE project, a lightweight desktop environment widely used in embedded devices
-                            such as Raspberry Pi
+                            Jim (Jserv) Huang leads the engineering team of BiiLabs, building open source based commercial solutions for information
+                            infrastructure and robotics. After involved in Android Open Source Project, Jim specializes in
+                            real-time and virtualization to bring Linux based robots to fit for the industrial requirements.
+                            He is the co-founder of LXDE project, a lightweight desktop environment widely used in embedded
+                            devices such as Raspberry Pi
                         </p>
                         <div class="contact-icon">
                             <a href="mailto:jserv.tw@gmail.com">
@@ -194,116 +221,127 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="item member-item member" id="man4">
+
+                <div class="item member-item member" id="man4">
                     <div class="member-inner">
-                        <img src="./images/ktchuang.png" alt="man4">
-                        <h2>Kun-Ta Chuang </h2>
-                        <h4>co-founder</h4>
+                        <img src="../images/jcli.png" alt="man4">
+                        <h2>Jhih-Cing Li</h2>
+                        <h4>member</h4>
                         <p>
-                            Kun-Ta Chuang currently serves as an assistant professor in Department of Computer Science and Information Engineering in
-                            National Cheng Kung University. He was a senior engineer at EDA giant Synopsys during 2006-2011.
-                            He received the Ph.D. degree from Graduate Institute of Communication Engineering, National Taiwan
-                            University, Taipei, Taiwan in 2006. His research interests include data mining, web technology,
-                            mobile data management, and cloud computing.
+                            Jhih-Cing Li Launches project Minedia discovering the trending news in Taiwan and analyzing their position. Also, he is a
+                            contributor of TaiwanStat. He concentrates on web technologies and data visualization. Currently
+                            an undergraduate student in Department of Computer Science and Information Engineering in National
+                            Cheng Kung University.
                         </p>
                         <div class="contact-icon">
-                            <a href="mailto:ktchuang@mail.ncku.edu.tw">
+                            <a href="mailto:dino8556@gmail.com">
                                 <i class="fas fa-envelope-square fa-2x fa-contact-info"></i>
                             </a>
-                            <a href="https://www.facebook.com/kunta.chuang.3" target="_blank">
+                            <a href="https://www.facebook.com/zching56" target="_blank">
                                 <i class="fab fa-facebook-square fa-2x fa-contact-info"></i>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="https://www.linkedin.com/in/twjcli" target="_blank">
                                 <i class="fab fa-linkedin fa-2x fa-contact-info"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-twitter-square fa-2x fa-contact-info"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="item member-item member" id="man5">
                     <div class="member-inner">
-                        <img src="./images/LmanChu.JPG" alt="Lman Chu">
-                        <h2>Lman Chu</h2>
-                        <h4>Industry expert / CEO of BiiLabs</h4>
+                        <img src="https://www.buira.org/assets/images/shared/default-profile.png" alt="Yi-Wei Wang">
+                        <h2>Yi-Wei Wang</h2>
+                        <h4>member</h4>
                         <p>
-                            Entrepreneur, evangelist of deep tech include IoT, Blockchain, Distributed Ledger Technology. Lman has more than 20 years
-                            in the Embedded Computing & IoT industry.
+                            Yi-Wei Wang contributes to TaiwanStat and concentrates on data visualization . Currently an undergraduate student in Department
+                            of Computer Science and Information Engineering in National Cheng Kung University.
                         </p>
                         <div class="contact-icon">
-                            <a href="mailto:Lman.chu@gmail.com">
+                            <a href="mailto:wangyiwei11259@gmail.com">
                                 <i class="fas fa-envelope-square fa-2x fa-contact-info"></i>
                             </a>
-                            <a href="https://www.facebook.com/lmanchu" target="_blank">
+                            <a href="https://www.facebook.com/yiweiWang01" target="_blank">
                                 <i class="fab fa-facebook-square fa-2x fa-contact-info"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/lmanchu/" target="_blank">
-                                <i class="fab fa-linkedin fa-2x fa-contact-info"></i>
-                            </a>
-                            <a href="https://twitter.com/lmanchu" target="_blank">
-                                <i class="fab fa-twitter-square fa-2x fa-contact-info"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="item member-item member" id="man6">
-                    <div class="member-inner">
-                        <img src="https://www.buira.org/assets/images/shared/default-profile.png" alt="man6">
-                        <h2>Jim (jserv) Huang</h2>
-                        <h4>co-founder</h4>
-                        <p>
-                            Jim leads the engineering team of BiiLabs, building open source based commercial solutions for information infrastructure
-                            and robotics. After involved in Android Open Source Project, Jim specializes in real-time and
-                            virtualization to bring Linux based robots to fit for the industrial requirements. He is the
-                            co-founder of LXDE project, a lightweight desktop environment widely used in embedded devices
-                            such as Raspberry Pi
-                        </p>
-                        <div class="contact-icon">
-                            <a href="mailto:jserv.tw@gmail.com">
-                                <i class="fas fa-envelope-square fa-2x fa-contact-info"></i>
-                            </a>
-                            <a href="https://www.facebook.com/microjserv" target="_blank">
-                                <i class="fab fa-facebook-square fa-2x fa-contact-info"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-linkedin fa-2x fa-contact-info"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-twitter-square fa-2x fa-contact-info"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
 
         </div>
     </section>
 
+    <section class="container partners-container" id="partners">
+        <div class="item introduction">
+            <h1>Partners</h1>
+        </div>
+        <!-- <div class="container partners-item-container">
+            <div class="item partners-item">
+                <img src="./images/mosquito.png" alt="mosquito">
+            </div>
+            <div class="item partners-item">
+                <img src="./images/mosquito.png" alt="mosquito">
+            </div>
+            <div class="item partners-item">
+                <img src="./images/mosquito.png" alt="mosquito">
+            </div> -->
+    </section>
+
     <section class="container c2a-container" id="c2a">
         <div class="item c2a-item introduction">
-            <h1>Get in touch</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h1>Contact Us</h1>
         </div>
-        <a href="#" class="herobtn c2a-item" id="herobtn2">
-            <span class="btn--twitter">follow our twitter</span>
-        </a>
+        <form id="gform" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbwNt_aC-sIGX_do0DxuSaBpeXXE98HRm06RfHud3rNBaLNJuCAA/exec">
+            <fieldset>
+                <label for="name">Your name</label>
+                <input id="name" name="name" autocomplete="name" placeholder="John Doe" />
+            </fieldset>
+            <fieldset>
+                <label for="email">
+                    Your email addres</label>
+                <input id="email" name="email" autocomplete="email" type="email" value="" required placeholder="sample@email.com" />
+                <span id="email-invalid" style="display:none">
+                    Must be a valid email address</span>
+            </fieldset>
+            <fieldset>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us what's on your mind"></textarea>
+            </fieldset>
+            <fieldset>
+                <label class="sr-only">Keep this field blank</label>
+                <input id="honeypot" type="text" name="honeypot" value="" />
+            </fieldset>
+            <fieldset>
+                <input id="interest-in" type="text" name="interest-in" value="empty" />
+            </fieldset>
+            <button class="herobtn c2a-item" id="herobtn2">
+                <span class="btn--mail">Send</span>
+                <span id="loader"></span>
+            </button>
+        </form>
+        <div id="thankyou_message">
+            <h4>
+                Thanks for contacting us! We will get back to you soon!
+            </h4>
+        </div>
+
     </section>
 
     <footer class="container footer">
         <div class="container">
             <div class="footer-item">
-                <h2>About us</h2>
-                <p>Duis fringilla at tortor ut gravida. Donec leo dolor, malesuada ut eros ut, maximus efficitur tellus. Praesent
-                    ornare vitae sapien auctor aliquet. In blandit erat eu libero auctor vulputate vel vel ex.
-                </p>
-            </div>
-            <div class="footer-item">
-                <h2>Contact us</h2>
-                <p>Lorem ipsum : dolor sit sectetur adipit. Sed imperdiet : sit ametlit tincidunt ac. Fusce : arcu velittus
-                    aeque.
-                </p>
+                <h2>DLTLab at NCKU</h2>
+                <!-- <div class="contact-icon"> -->
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook-square fa-2x fa-contact-info footer-icon"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin fa-2x fa-contact-info footer-icon"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter-square fa-2x fa-contact-info footer-icon"></i>
+                </a>
+                <!-- </div> -->
             </div>
         </div>
         <div id="copyright">
@@ -313,6 +351,7 @@
 
     <script src="javascript/progressive-loading.js" type="text/javascript"></script>
     <script src="javascript/fade.js" type="text/javascript"></script>
+    <script src="javascript/form-submission-handler.js" type="text/javascript"></script>
 </body>
 
 </html>
