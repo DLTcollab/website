@@ -5,10 +5,10 @@ function validEmail(email) { // see:
 
 function validateHuman(honeypot) {
   if (honeypot) {  //if hidden form filled up
-    console.log("Robot Detected!");
+    // console.log("Robot Detected!");
     return true;
   } else {
-    console.log("Welcome Human!");
+    // console.log("Welcome Human!");
   }
 }
 
@@ -16,7 +16,10 @@ function validateHuman(honeypot) {
 function getFormData() {
   var form = document.getElementById("gform");
   var elements = form.elements; // all form elements
-  var fields = Object.keys(elements).map(function (k) {
+  var fields = Object.keys(elements).filter(function (k) {
+    // the filtering logic is simple, only keep fields that are not the honeypot
+    return (elements[k].name !== "honeypot");
+  }).map(function (k) {
     if (elements[k].name !== undefined) {
       return elements[k].name;
       // special case for Edge's html collection
@@ -54,7 +57,7 @@ function getFormData() {
   data.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
   data.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
-  console.log(data);
+  // console.log(data);
   return data;
 }
 
@@ -63,7 +66,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   var data = getFormData();         // get the values submitted in the form
 
   /* OPTION: Remove this comment to enable SPAM prevention, see README.md */
-  if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+  if (validateHuman(document.getElementById("gform").elements.honeypot.value)) {  //if form is filled, form will not be submitted
     return false;
   }
 
@@ -77,8 +80,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
-      console.log(xhr.status, xhr.statusText)
-      console.log(xhr.responseText);
+      // console.log(xhr.status, xhr.statusText)
+      // console.log(xhr.responseText);
       document.getElementById("gform").style.display = "none"; // hide form
       document.getElementById("thankyou_message").style.display = "block";
       return;
