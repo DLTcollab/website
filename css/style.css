@@ -67,6 +67,7 @@ h1~p,
 
 .footer-icon {
     color: rgba(255, 255, 255, 0.2);
+    padding: 2px;
 }
 
 .footer-icon:hover {
