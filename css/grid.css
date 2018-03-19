@@ -19,6 +19,9 @@
 .item {
     /* border: 2px solid black; */
     text-align: center;
+
+    flex-basis: auto;
+    -ms-flex-preferred-size: auto;
 }
 
 .hero-container {
