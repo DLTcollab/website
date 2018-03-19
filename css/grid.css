@@ -23,6 +23,9 @@
     -webkit-transition: opacity 0.5s ease-in;
     -o-transition: opacity 0.5s ease-in;
     transition: opacity 0.5s ease-in;
+
+    flex-basis: auto;
+    -ms-flex-preferred-size: auto;
 }
 
 .hero-container {
