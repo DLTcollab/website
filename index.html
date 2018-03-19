@@ -294,12 +294,12 @@
         <form id="gform" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbwNt_aC-sIGX_do0DxuSaBpeXXE98HRm06RfHud3rNBaLNJuCAA/exec">
             <fieldset>
                 <label for="name">Your name</label>
-                <input id="name" name="name" placeholder="John Doe" />
+                <input id="name" name="name" autocomplete="name" placeholder="John Doe" />
             </fieldset>
             <fieldset>
                 <label for="email">
                     Your email addres</label>
-                <input id="email" name="email" type="email" value="" required placeholder="sample@email.com" />
+                <input id="email" name="email" autocomplete="email" type="email" value="" required placeholder="sample@email.com" />
                 <span id="email-invalid" style="display:none">
                     Must be a valid email address</span>
             </fieldset>
@@ -316,6 +316,7 @@
             </fieldset>
             <button class="herobtn c2a-item" id="herobtn2">
                 <span class="btn--mail">Send</span>
+                <span id="loader"></span>
             </button>
         </form>
         <div id="thankyou_message">

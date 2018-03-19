@@ -74,8 +74,10 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     document.getElementById("email-invalid").style.display = "block";
     return false;
   } else {
+    showLoader();
     var url = event.target.action;  //
     var xhr = new XMLHttpRequest();
+    
     xhr.open('POST', url);
     // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -83,6 +85,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
       // console.log(xhr.status, xhr.statusText)
       // console.log(xhr.responseText);
       document.getElementById("gform").style.display = "none"; // hide form
+      document.getElementById("loader").style.display = "none"; // hide loader
       document.getElementById("thankyou_message").style.display = "block";
       return;
     };
@@ -93,6 +96,13 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     xhr.send(encoded);
   }
 }
+
+function showLoader() {
+  var loader = document.getElementById("loader");
+  loader.style.display = "block";
+  document.querySelector('#herobtn2 .btn--mail').style.display = "none"; // hide "Send"
+};
+
 function loaded() {
   // bind to the submit event of our form
   var form = document.getElementById("gform");
