@@ -23,7 +23,6 @@
     -webkit-transition: opacity 0.5s ease-in;
     -o-transition: opacity 0.5s ease-in;
     transition: opacity 0.5s ease-in;
-
     flex-basis: auto;
     -ms-flex-preferred-size: auto;
 }
@@ -116,7 +115,6 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    
 }
 
 .works-item img {
@@ -192,13 +190,12 @@ h4~p {
     border-radius: 50%;
 }
 
-
-.partners-container{
+.partners-container {
     background-color: rgb(220, 225, 233);
     min-height: 10vh;
 }
 
-.partners-item-container{
+.partners-item-container {
     justify-content: space-around;
     min-height: 10vh;
     -webkit-box-orient: horizontal;
@@ -209,7 +206,7 @@ h4~p {
     width: 100%;
 }
 
-.partners-items{
+.partners-items {
     flex-basis: 30%;
 }
 
@@ -230,9 +227,16 @@ h4~p {
 
 .introduction {
     z-index: 1;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    /* flex-basis: auto; */
+    /**
+    *
+    *   TOFIXED:  
+    *       flex-basis should be 100% 
+    *       but currently there is only one item , temp set it to auto        
+    */
+    /* -ms-flex-preferred-size: 100%; */
+    /* flex-basis: 100%; */
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
     display: block;
 }
 
