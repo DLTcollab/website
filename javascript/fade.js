@@ -67,6 +67,7 @@ window.onscroll = function () {
     }
     if (member_count == 1 && (window.scrollY > member_item_offset)) {
         var member_delay = 0;
+        introductions[3].style.opacity = 1;
         for (var i = 0; i < member_item.length; ++i, member_delay += 0.3) {
             member_item[i].style.transitionDelay = member_delay + "s";
             member_item[i].style.opacity = 1;
@@ -74,7 +75,7 @@ window.onscroll = function () {
         member_count++;
     }
     if (partners_count == 0 && (window.scrollY > partners_intro_offset)) {
-        introductions[3].style.opacity = 1;
+        introductions[4].style.opacity = 1;
         partners_count++;
     }
     if (partners_count == 1 && (window.scrollY > partners_item_offset)) {
@@ -86,7 +87,7 @@ window.onscroll = function () {
         partners_count++;
     }
     if (c2a_count == 0 && (window.scrollY > c2a_intro_offset)) {
-        introductions[2].style.opacity = 1;
+        introductions[5].style.opacity = 1;
         c2a_count++;
     }
     if (c2a_count == 1 && (window.scrollY > c2a_item_offset)) {
