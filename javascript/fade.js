@@ -1,3 +1,5 @@
+var intro_count = 0;
+
 var hero_div = document.getElementById("hero");
 
 var introductions = document.getElementsByClassName("introduction");
@@ -5,26 +7,26 @@ var introductions = document.getElementsByClassName("introduction");
 var features_div = document.getElementById("features");
 var feature_item = document.getElementsByClassName("feature-item");
 var feature_intro_offset = features_div.offsetTop - hero_div.offsetHeight;
-var feature_item_offset = (feature_intro_offset) + introductions[0].offsetHeight;
+var feature_item_offset = (feature_intro_offset) + introductions[intro_count++].offsetHeight;
 var feature_count = 0;
 
 var works_div = document.getElementById('works');
 var works_item = document.getElementsByClassName("works-item");
 var works_intro_offset = works_div.offsetTop - hero_div.offsetHeight;
-var works_item_offset = works_intro_offset + introductions[1].offsetHeight;
+var works_item_offset = works_intro_offset + introductions[intro_count++].offsetHeight;
 var works_count = 0;
 
 
 var members_div = document.getElementById("members");
 var member_item = document.getElementsByClassName("member-item"); 
 var member_intro_offset = members_div.offsetTop - hero_div.offsetHeight;
-var member_item_offset = (member_intro_offset) + introductions[2].offsetHeight;
+var member_item_offset = (member_intro_offset) + introductions[intro_count++].offsetHeight;
 var member_count = 0;
 
 // var partners_div = document.getElementById('partners');
 // var partners_item = document.getElementsByClassName("partners-item");
 // var partners_intro_offset = partners_div.offsetTop - hero_div.offsetHeight;
-// var partners_item_offset = partners_intro_offset + introductions[3].offsetHeight;
+// var partners_item_offset = partners_intro_offset + introductions[intro_count++].offsetHeight;
 // var partners_count = 0;
 
 var c2a_div = document.getElementById("c2a");
@@ -33,10 +35,10 @@ var c2a_item_center = document.getElementsByClassName("c2a-item")[1];
 var c2a_logo = document.getElementById("action-logo");
 var c2a_btn = document.getElementById("herobtn2");
 var c2a_intro_offset = c2a_div.offsetTop - hero_div.offsetHeight;
-var c2a_item_offset = (c2a_intro_offset) + introductions[4].offsetHeight;
+var c2a_item_offset = (c2a_intro_offset) + introductions[intro_count++].offsetHeight;
 var c2a_count = 0;
 
-var intro_count = 0;
+intro_count = 0;
 
 window.onscroll = function () {
     if (feature_count == 0 && (window.scrollY > feature_intro_offset)) {
