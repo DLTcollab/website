@@ -89,9 +89,9 @@
     width: 100%;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .member-container {
@@ -146,8 +146,13 @@
     text-align: left;
 }
 
+
 .works-item a {
     color: steelblue;
+}
+
+.works-item .works-btn-div {
+    text-align: left;
 }
 
 .feature-item {
