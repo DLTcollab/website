@@ -282,6 +282,7 @@ h1~p,
 }
 
 .footer-item h2 {
+    font-weight: bold;
     font-size: 20px;
 }
 
