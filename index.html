@@ -61,7 +61,7 @@
                 We are on a mission to build a more open, accessible and fair future with blockchain and distributed ledger technology
             </h2>
             <!-- TODO: fill in the lab mail -->
-            <a href="#gform" class="herobtn">
+            <a onclick="smoothScroll('contact-section');" class="herobtn">
                 <span class="btn--mail">contact us</span>
             </a>
         </div>
@@ -152,7 +152,7 @@
                     <div class="member-inner">
                         <img src="./images/ktchuang.jpg" alt="ktchuang">
                         <h2>Prof. Kun-Ta Chuang </h2>
-                        <h4>co-PI</h4>
+                        <h4>co-PI / core member</h4>
                         <p>
                             Kun-Ta Chuang currently serves as an assistant professor in Department of Computer Science and Information Engineering in
                             National Cheng Kung University. He was a senior engineer at EDA giant Synopsys during 2006-2011.
@@ -174,7 +174,7 @@
                     <div class="member-inner">
                         <img src="./images/LmanChu.JPG" alt="Lman Chu">
                         <h2>Lman Chu</h2>
-                        <h4>Industry expert / CEO of BiiLabs</h4>
+                        <h4>Industry expert / CEO of BiiLabs / core member</h4>                 
                         <p>
                             Entrepreneur, evangelist of deep tech include IoT, Blockchain, Distributed Ledger Technology. Lman has more than 20 years
                             in the Embedded Computing & IoT industry.
@@ -200,7 +200,7 @@
                     <div class="member-inner">
                         <img src="../images/jserv.jpg" alt="Jim Huang">
                         <h2>Prof. Jim Huang</h2>
-                        <h4>co-PI</h4>
+                        <h4>co-PI / core member</h4>                     
                         <p>
                             Jim (Jserv) Huang leads the engineering team of BiiLabs, building open source based commercial solutions for information
                             infrastructure and robotics. After involved in Android Open Source Project, Jim specializes in
@@ -411,7 +411,7 @@
 
     <section class="container c2a-container" id="c2a">
         <div class="item c2a-item introduction">
-            <h1>Contact Us</h1>
+            <h1 id="contact-section">Contact Us</h1>
         </div>
         <form id="gform" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbwNt_aC-sIGX_do0DxuSaBpeXXE98HRm06RfHud3rNBaLNJuCAA/exec">
             <fieldset>
@@ -420,7 +420,7 @@
             </fieldset>
             <fieldset>
                 <label for="email">
-                    Your email addres</label>
+                    Your email address</label>
                 <input id="email" name="email" autocomplete="email" type="email" value="" required placeholder="sample@email.com" />
                 <span id="email-invalid" style="display:none">
                     Must be a valid email address</span>
@@ -471,6 +471,7 @@
     <script src="javascript/progressive-loading.js" type="text/javascript"></script>
     <script src="javascript/fade.js" type="text/javascript"></script>
     <script src="javascript/form-submission-handler.js" type="text/javascript"></script>
+    <script src="javascript/smooth-scroll.js" type="text/javascript"></script>    
 </body>
 
 </html>
