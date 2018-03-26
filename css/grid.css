@@ -146,7 +146,6 @@
     text-align: left;
 }
 
-
 .works-item a {
     color: steelblue;
 }
@@ -170,9 +169,13 @@ h4~p {
 }
 
 .member {
+    flex-grow: 1;
+    width: calc(100% * (1/4) - 64px);
+    padding: 8px;
     /* 到時候資料來的時候要重新設定 min-height, min-width*/
     max-width: 350px;
     min-width: 280px;
+    box-sizing: border-box;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
     min-height: 600px;
@@ -189,9 +192,9 @@ h4~p {
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.5);
     /* 到時候資料來的時候要重新設定 min-height, min-width*/
-    min-height: 600px;
-    min-width: 300px;
-    max-width: 400px;
+    min-height: 620px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-icon {
