@@ -179,6 +179,33 @@ h1~p,
     margin-bottom: 32px;
 }
 
+.btn {
+    display: inline-block;
+    /* Padding and margins */
+    padding: 8px 16px;
+    /* Text styles */
+    text-decoration: none;
+    font-size: 1rem;
+    /* Border styles */
+    border-radius: 40px;
+    /* Background styles */
+    background-color: transparent;
+    /* Animation */
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+    max-width: 200px;
+    border: 2px solid #002A5F;
+}
+
+.btn:hover {
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+}
+
 .herobtn {
     /* Positioning and sizing */
     display: inline-block;
@@ -352,6 +379,7 @@ textarea {
         transform: rotate(360deg);
     }
 }
+
 
 /* .banner {
     width: 100vw;
