@@ -70,7 +70,7 @@ window.onscroll = function () {
     }
     if (member_count == 1 && (window.scrollY > member_item_offset)) {
         var member_delay = 0;
-        introductions[intro_count++].style.opacity = 1;
+        // introductions[intro_count++].style.opacity = 1;
         for (var i = 0; i < member_item.length; ++i, member_delay += 0.3) {
             member_item[i].style.transitionDelay = member_delay + "s";
             member_item[i].style.opacity = 1;

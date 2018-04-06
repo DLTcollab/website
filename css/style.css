@@ -131,11 +131,6 @@ h1~p,
     top: 0;
 }
 
-/* 
-.feature-mask {
-    background: linear-gradient(to bottom, rgba(1, 18, 248, 0.9) 50%, rgba(133, 148, 230, 0.6) 100%);    
-} */
-
 .bg-mask span {
     position: absolute;
     right: 0;
@@ -182,6 +177,33 @@ h1~p,
     width: 50%;
     min-width: 320px;
     margin-bottom: 32px;
+}
+
+.btn {
+    display: inline-block;
+    /* Padding and margins */
+    padding: 8px 16px;
+    /* Text styles */
+    text-decoration: none;
+    font-size: 1rem;
+    /* Border styles */
+    border-radius: 40px;
+    /* Background styles */
+    background-color: transparent;
+    /* Animation */
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+    max-width: 200px;
+    border: 2px solid #002A5F;
+}
+
+.btn:hover {
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
 }
 
 .herobtn {
@@ -247,18 +269,10 @@ h1~p,
     opacity: 1;
 }
 
-.introduction {
-    /* opacity: 1; */
-}
-
 .introduction p {
     max-width: 800px;
     margin: 0 auto;
 }
-
-/* .feature-texts{
-    background-color: #fff;
-} */
 
 .team {
     background-color: #f7f7f7;
@@ -366,16 +380,6 @@ textarea {
     }
 }
 
-/* .member :hover{
-    box-shadow: inset 0 0 0 5px #f5dd59;
-} */
-
-/* .member-container img:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 0.5s
-} */
 
 /* .banner {
     width: 100vw;
