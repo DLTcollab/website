@@ -39,12 +39,14 @@
     text-align: center;
     color: white;
     /* Background styles */
-    background-image: url('../images/hero.jpg');
+    background-image: url('../images/hero-tiny.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
 }
 
 .feature-container {
